@@ -12,8 +12,9 @@ import org.junit.jupiter.api.BeforeEach;
 import static com.codeborne.selenide.Selenide.*;
 
 public class TestBase {
+
     @BeforeAll
-    static void beforeAll() {
+     static void beforeAll() {
         Configuration.browser = BrowserstackDriver.class.getName();
         Configuration.browserSize = null;
     }

@@ -1,7 +1,9 @@
 package config;
 import org.aeonbits.owner.Config;
 
-@Config.Sources("classpath:config/android.properties")
+@Config.Sources({
+        "classpath:${env}.properties"
+})
 
 public interface MobileConfig extends Config {
 
